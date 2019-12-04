@@ -3,7 +3,51 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 This project represents an Event's countdown Website with subscription possibility.
 
 Fontend Project using a few plugins like React-Reveal, React-Slick, React-Scroll, Material-Ui.
+ 
+ ```
+ import React, {Component} from 'react';
+import './resources/styles.css';
+import {Element} from 'react-scroll';
+import Header from "./components/header_footer/Header";
+import Featured from "./components/featured";
+import VenueInfo from "./components/veueInfo";
+import Highlights from "./components/highlights";
+import Pricing from "./components/pricing";
+import Location from "./components/location";
+import Footer from "./components/header_footer/Footer";
 
+class App extends Component{
+    render() {
+        return (
+            <div className="App">
+                <Header/>
+                <Element name="eventStartsIn">
+                    <Featured/>
+                </Element>
+                <Element name="venueNFO">
+                    <VenueInfo/>
+                </Element>
+                <Element name="highlights">
+                    <Highlights/>
+                </Element>
+                <Element name="pricing">
+                    <Pricing/>
+                </Element>
+                <Element name="location">
+                    <Location/>
+                </Element>
+                <Footer/>
+            </div>
+        );
+    }
+}
+
+
+export default App;
+ ```
+ 
+ Here I'm rendering al the components that were created previously in order to display the content on the website, wrapping the components in the Div App, and refencing the name of the components so  the scroller can used the in order to slide to wich part of the page that conrrespond to it.
+ 
 ## Available Scripts
 
 In the project directory, you can run:
