@@ -8,7 +8,7 @@ class Featured extends Component {
             <div style={{position:'relative'}}>
                 <Carousel/>
                 <div className="artist_name">
-                    <div className="wrapper">Artist</div>
+                    <div className="wrapper">Robby Gordon</div>
                 </div>
                 <TimeUntil/>
             </div>
