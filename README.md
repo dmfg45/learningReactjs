@@ -1,6 +1,8 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-This project represents an Event's countdown Website with subscription possibility
+This project represents an Event's countdown Website with subscription possibility.
+
+Fontend Project using a few plugins like React-Reveal, React-Slick, React-Scroll, Material-Ui.
 
 ## Available Scripts
 
